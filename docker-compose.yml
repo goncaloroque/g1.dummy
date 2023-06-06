@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  g1.dummy:
+    image: ${DOCKER_REGISTRY-}g1dummy
+    build:
+      context: .
+      dockerfile: g1.dummy/Dockerfile
